@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP/API/CURL Project</title>
+    <meta name="author" content="Florentin Soltan">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="./css/style.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    
+    <table>
+        <tr>
+            <th>API name</th>
+            <th>Api description</th>
+            <th></th>    
+        </tr>
+        <tr>
+            <td>
+                <select id="countrys">
+                    <option value="RO">Romania</option>
+                    <option value="GB">Great Britain</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                    <option value="US">USA</option>
+                </select>
+            </td>
+            <td>Capital and population of the country</td>
+            <td><button id="but1">Submit</button></td>
+        </tr>
+        <tr>
+            <td> 
+                Lat:<input class="inputGeo" id="inputLat" type="text" name="text">
+                <br>
+                Lng:<input class="inputGeo" id="inputLon" type="text" name="text">         
+            </td>
+            <td>Sunrise and Sunset of the geo location</td>
+            <td>
+                <button id="but2">Submit</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="inputCity">
+            </td>
+            <td>Input a city and you get the country code and the population of that city.</td>
+            <td>
+                <button id="but3">Submit</button>
+            </td>
+        </tr>
+        <tr>
+            <td id="result" colspan="3">Result</td>
+        </tr>
+    </table>
+
+    <div id=”preloader”></div>
+
+    <script src="./js/js.js"></script>
+
+</body>
+
+</html>

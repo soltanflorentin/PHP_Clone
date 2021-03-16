@@ -1,0 +1,88 @@
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+    }
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #f2f2f2;
+    border-top: 6px solid #56829e ;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+    }
+@-webkit-keyframes animate-preloader {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+            }
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+            }}
+@keyframes animate-preloader {
+        0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+                }               
+        100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+                }}
+
+
+
+
+table {
+    width: 60%;
+}
+table, tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: rgb(243, 237, 237);
+}
+td, th {
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 25px;
+}
+#result {
+    padding: 150px 150px;
+}
+button {
+    height: 60px;
+    width: 190px;
+    background-color: rgb(74, 170, 207);
+    font-size: 30px;
+}
+button:hover {
+    background-color: rgb(135, 177, 201);
+}
+
+#countrys {
+    font-size: 25px;
+}
+.inputGeo {
+    width: 100px;
+    font-size: 25px;
+}
+#inputLon {
+    margin-top: 5px;
+}
+#inputCity {
+    width: 200px;
+    font-size: 25px;
+}
+
+
+
